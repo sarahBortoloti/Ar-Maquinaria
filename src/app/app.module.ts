@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminModule } from './admin-admin/admin.module';
@@ -57,6 +57,7 @@ import { AdminLoginGuard } from './admin-login-guard.service';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgbModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
     
     ReactiveFormsModule,
