@@ -6,7 +6,6 @@ import { CatalogoComponent } from './catalogo/catalogo.component'
 import { LojaComponent } from './loja/loja.component'
 import { ProdutoComponent } from './produto/produto.component'
 import {ContatoComponent} from './contato/contato.component'
-import{RepresentantesComponent} from './representantes/representantes.component'
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import{AdminLoginGuard} from './admin-login-guard.service'
 
@@ -18,7 +17,7 @@ export const ROUTES: Routes = [
     {path:'catalogo',component:CatalogoComponent},
     {path:'loja',component:LojaComponent},
     {path:'produto/:key',component: ProdutoComponent},
-    {path:'representantes', component:RepresentantesComponent},
+    
     {path:'contato', component:ContatoComponent},
     {path:'admin',component:AdminLoginComponent}
 ]

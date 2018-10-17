@@ -1,13 +1,14 @@
 export class ClienteContato{
     
     constructor( 
-     public nome:string,
+     public nombre:string,
      public email:string,
-     public telefone:string,
-     public celular:string,
+     public telefono:string,
+     public movil:string,
      public provincia:string,
-     public cidade:string,
-     public mensagem:string
+     public ciudad:string,
+     public tema:string,
+     public mensagen:string
     ){}
  }
  

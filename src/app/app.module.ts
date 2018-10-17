@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ProdutoComponent } from './produto/produto.component';
-import { RepresentantesComponent } from './representantes/representantes.component';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { LojaComponent } from './loja/loja.component';
 import { ContatoComponent } from './contato/contato.component';
@@ -45,7 +44,6 @@ import { AdminLoginGuard } from './admin-login-guard.service';
     RodapeComponent,
     ProdutosComponent,
     ProdutoComponent,
-    RepresentantesComponent,
     EmpresaComponent,
     LojaComponent,
     ContatoComponent,

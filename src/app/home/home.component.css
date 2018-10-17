@@ -1,6 +1,4 @@
-.space{
-  padding-top: 10px;
-}
+
   img{
     width: 100%;
     height: auto;
@@ -67,4 +65,7 @@
   
   .col-md-4{
     padding:20px;
+  }
+  h3{
+    text-align: center;
   }

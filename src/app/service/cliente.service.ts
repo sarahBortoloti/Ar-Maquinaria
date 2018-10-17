@@ -18,12 +18,6 @@ export class Cliente{
 
     }
 
-    public cadastrarClienteRepresentante(clienteRepresentante:ClienteRepresentante):void{
-         //Registra clientes da page Contato na base 64;
-
-         firebase.database().ref(`cliente_representante/${btoa(clienteRepresentante.email)}`).set(clienteRepresentante);
-        console.log(clienteRepresentante);
-       }
 
 
 

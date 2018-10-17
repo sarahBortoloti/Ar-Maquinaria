@@ -12,14 +12,14 @@ export class ContatoComponent implements OnInit {
   constructor(private cliente:Cliente) { }
 
   public formulario:FormGroup = new FormGroup({
-    'nome': new FormControl(null),
+    'nombre': new FormControl(null),
     'email': new FormControl(null),
-    'telefone': new FormControl(null),
-    'celular':new FormControl(null),
-    'provincia': new FormControl(null),
-    'cidade': new FormControl(null),
-    'assunto': new FormControl(null),
-    'mensagem':new FormControl(null)
+    'telefono': new FormControl(null),
+    'Movil':new FormControl(null),
+    'Provincia': new FormControl(null),
+    'Ciudad': new FormControl(null),
+    'Tema': new FormControl(null),
+    'Mensagen':new FormControl(null)
   })
 
   ngOnInit() {
@@ -29,23 +29,24 @@ export class ContatoComponent implements OnInit {
    // console.log(this.formulario);
 
     let clienteContato: ClienteContato = new ClienteContato(
-      this.formulario.value.nome,
+      this.formulario.value.nombre,
       this.formulario.value.email,
-      this.formulario.value.telefone,
-      this.formulario.value.celular,
+      this.formulario.value.telefono,
+      this.formulario.value.movil,
       this.formulario.value.provincia,
-      this.formulario.value.cidade,
-      this.formulario.value.mensagem
+      this.formulario.value.ciudad,
+      this.formulario.value.tema,
+      this.formulario.value.mensagen
 
     )
     this.cliente.cadastrarClienteContato(clienteContato);
-   alert("Mensagem enviada com sucesso! Em breve entramos em contato!")
+     alert("Mensagem enviada com sucesso! Em breve entramos em contato!")
     this.onSubmit();
   }
 
   onSubmit() {
     if (this.formulario.valid) {
-      console.log("Form Submitted!");
+      console.log("Formulário enviado com sucesso");
       this.formulario.reset();
     }
   }
