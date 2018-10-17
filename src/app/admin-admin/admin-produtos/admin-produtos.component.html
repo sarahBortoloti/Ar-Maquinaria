@@ -1,0 +1,85 @@
+<div class="container">
+  <br>
+  <br>
+  <h3>Cadastrar Produto</h3>
+  <hr>
+  <br>  
+
+  <form [formGroup]="formulario" (ngSubmit)="cadastraProduto()">
+  <div class="row">
+      <div class="form-group col-sm-6">
+        <input 
+        type="text"
+        class="form-control" 
+        id="titulo" 
+        placeholder="Nome da Toalha"
+        formControlName="titulo">
+      </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <input type="text" 
+       class="form-control" 
+       id="cor" 
+       placeholder="Cor/cores da toalha..."
+       formControlName="cor">
+    </div>
+  </div>
+   <br>
+
+  <div class="row">
+   <div class="form-group col-md-6">
+    <input
+      type="text" 
+      class="form-control" 
+      id="dimensao" 
+      placeholder="Linha da Toalha... "
+      formControlName="dimensao">
+  </div>
+</div>
+
+<br>
+ <div class="row">
+   <div class="form-group col-md-6">
+     <input 
+      class="form-control" 
+      placeholder="Composição da toalha..."
+      formControlName="composicao">
+   </div>
+</div>
+    
+    <br>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <input type="file" accept="image/*" class="input-produtos form-control"  
+          (change)="preparaImagemUpload($event)"
+         />
+          </div>
+      </div>
+      
+    <br>
+    
+    <div class="row">
+      <div class="form-group col-md-6">
+        <textarea 
+          class="form-control" 
+          placeholder="Descrição..." 
+          rows="3"
+          formControlName="descricao"></textarea>
+        </div>  
+    </div>
+<div class="row">
+  <div class="col-md-12">
+    <button type="submit" class="btn btn-secondary btn-lg">Enviar</button>
+  </div>
+</div>
+<br>
+       
+</form>
+</div>            
+
+
+
+

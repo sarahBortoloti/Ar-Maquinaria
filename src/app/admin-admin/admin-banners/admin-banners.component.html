@@ -1,0 +1,40 @@
+<div class="container">
+  <br>
+  <br>
+
+<div class="row">
+  <div class="col-md-12 ">
+  <h3>Cadastrar Banners</h3>
+  <h4>Se ja há 3 banners, favor remover um para adicionar um novo </h4>
+  <hr>
+  <br>  
+    <form [formGroup]="formulario" (ngSubmit)="cadastraBanners()">
+    <div class="row">
+        <div class="form-group col-md-8">
+          <input 
+          type="text"
+          class="form-control" 
+          id="titulo" 
+          placeholder="Nome da Toalha"
+          formControlName="titulo">
+        </div>
+    </div>
+
+  <div class="row">
+    <div class="form-group col-md-8">
+      <input type="file" accept="image/*" class="form-control"  
+        (change)="preparaImagemUpload($event)" 
+      />
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-secondary btn-lg">Enviar</button>
+      </div>
+    </div>
+
+    </form>
+   </div>
+</div>
+</div>

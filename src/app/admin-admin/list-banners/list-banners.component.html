@@ -1,0 +1,28 @@
+<div class="container">
+  <br>
+  <br>
+  <h4>Banners</h4>
+   <hr> 
+  
+   <div class="row" >
+     <br>
+      <div class="col-sm-8" *ngFor="let banner of banners">
+        <div class="card">
+        <img class="card-img-top" [src]="banner.url_imagem">
+          <div class="card-block">
+            <a class="btn btn-danger "(click)="removeBanner(banner.key,banner.titulo)">Remover Banner</a>
+  
+          </div>
+        </div>
+        <br>
+      </div>    
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> 
+  
+
+</div>

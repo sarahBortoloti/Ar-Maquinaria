@@ -1,0 +1,44 @@
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.img-loja{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: gray 1px solid;
+}
+
+p{
+    
+    float: right;
+    font-size: 16px;
+    text-align: justify;
+
+}
+
+h3,h4,h5{
+    margin-top: 20px;
+
+ 
+
+}
+ul {
+    list-style: none;
+}
+
+
+.img-produto{
+    float:right;
+    margin-top: 20xp;
+}
+
+
+
+ul li {
+    margin-top: 20px;
+    font-size: 16px;
+}
+

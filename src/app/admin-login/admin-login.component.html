@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="box">
+        <form [formGroup]="formulario"(ngSubmit)=autenticar()>
+          <h4>Administración</h4><br>
+            <div class="form-group">
+              <label for="email"> Login</label>
+              <input formControlName="email" type="text" class="form-control" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="senha"> Contraseña</label>
+              <input formControlName="senha" type="password" class="form-control" required>
+            </div>
+       <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</div>

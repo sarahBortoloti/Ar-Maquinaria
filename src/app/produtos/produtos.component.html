@@ -1,0 +1,29 @@
+<div class="container">
+  <br>
+  <br>
+  <h3>Nossos Produtos</h3>
+   <hr> 
+  
+   <div class="row" >
+     <br>
+      <div class="col-sm-4" *ngFor="let produto of produtos">
+        <div class="card">
+           <img class="card-img-top" [src]="produto.url_imagem">
+            <div class="card-block">
+              <h4 class="card-title">{{produto.titulo }}</h4>
+              <button [routerLink] ="['/produto',produto.key]"  class="btn btn-outline-primary">Ver Produto</button>
+  
+          </div>
+        </div>
+        <br>
+      </div>    
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> 
+  
+
+</div>

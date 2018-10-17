@@ -1,0 +1,62 @@
+.logo-footer{
+    background: #225378;
+}
+
+textrodape{
+    text-align: center;
+}    
+
+
+footer{
+    background: #225378;
+}
+p,h5{
+    color: #fff;
+}
+
+h6{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif ;
+    columns: #225378;
+    display: none;
+    
+}
+
+.img-logo{
+    height: 40px;
+	width: 300px;
+	background: url("../../assets/logo/logo-branco.png") no-repeat;
+	display: block;
+	color: transparent;
+    background-size: contain;
+    margin-top: 10px;
+}
+
+
+.rede-social{
+    width: 120px;
+    height: 60px;
+    margin-left:60px;
+    background: #225378;
+
+}
+
+.img-facebook{
+    height: 60px;
+	width: 60px;
+	background: url("../../assets/redes-sociais/facebook.png") no-repeat;
+	display: block;
+	color: transparent;
+    background-size: contain;
+    margin: 0;
+}
+
+.img-instagram{
+        height: 60px;
+        width: 60px;
+        background: url("../../assets/redes-sociais/instagram.png") no-repeat;
+        display: block;
+        color: transparent;
+        background-size: contain;
+        margin: 0;
+    }
+

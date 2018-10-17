@@ -1,0 +1,29 @@
+<div class="container">
+  <br>
+  <br>
+  <h4>Produtos</h4>
+   <hr> 
+  
+   <div class="row" >
+     <br>
+      <div class="col-sm-4" *ngFor="let produto of produtos">
+        <div class="card">
+        <img class="card-img-top" [src]="produto.url_imagem">
+          <div class="card-block">
+            <h4 class="card-title">{{produto.titulo }}</h4>
+            <a class="btn btn-danger "(click)="RemoveProdutoByKey(produto.key, produto.titulo)">Remover Produto</a>
+  
+          </div>
+        </div>
+        <br>
+      </div>    
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> 
+  
+
+</div>

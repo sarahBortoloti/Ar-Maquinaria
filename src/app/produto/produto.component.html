@@ -1,0 +1,38 @@
+
+<div class="container"> 
+  <div *ngIf="produto !== undefined">
+   <div class="d-flex justify-content-center">
+  
+     <div class="row">
+         <div class="produto-margim">
+           <div class="col-md-6 produto">
+             <img [src]="produto.url_imagem" alt="Card image"> 
+           </div>
+         </div>
+       </div>    
+ </div>
+   
+ <div class="justify-content-center">
+     <div class="row produtos">
+       <div class="col produtos">
+         <h2>Descripción de Producto</h2>
+
+         
+         <p *ngIf="produto.description!== undefined"> No hay descripción para este producto! </p>
+             <ul>  
+              
+               <li>Nome:{{produto.titulo}}</li>
+               <li>Cor: {{produto.cor}}</li>
+               <li>Linha:{{produto.dimensao}} </li>
+               <li>Composição:{{produto.composicao}}</li>
+               <li>{{produto.descricao}}</li>     
+             </ul>  
+             <br>
+             <br>
+             <br>
+       </div>
+       </div>    
+     </div>
+   </div>
+ </div>
+ 
